@@ -79,3 +79,25 @@ Or manually edit `/etc/docker/daemon.json` to add:
   ]
 }
 ```
+
+## PM2 Deployment (No Docker)
+
+If you prefer to run the application directly on the server (e.g., to avoid Docker network issues), you can use the provided PM2 script.
+
+This method requires `Node.js` and `npm` to be installed on your server.
+
+### One-click Deployment
+
+Run the script with `sudo` to allow binding to port 80:
+
+```bash
+chmod +x deploy_pm2.sh
+sudo ./deploy_pm2.sh
+```
+
+This script will:
+1. Install dependencies (using Tencent Cloud mirror).
+2. Build the application.
+3. Install `pm2` globally.
+4. Start the application on port 80 with a guardian process.
+5. Configure startup hooks for auto-restart on reboot.
