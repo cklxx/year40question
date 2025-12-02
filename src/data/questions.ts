@@ -1,0 +1,48 @@
+export interface Question {
+  id: number;
+  en: string;
+  zh: string;
+}
+
+export const questions: Question[] = [
+  { id: 1, en: "What did you do this year that you’d never done before?", zh: "今年你做了什么以前从未做过的事？" },
+  { id: 2, en: "Did you keep your new year’s resolutions?", zh: "你遵守了你的新年决心吗？" },
+  { id: 3, en: "Did anyone close to you give birth?", zh: "你身边有人生孩子了吗？" },
+  { id: 4, en: "Did anyone close to you die?", zh: "你身边有人去世了吗？" },
+  { id: 5, en: "What cities/states/countries did you visit?", zh: "你去了哪些城市/州/国家？" },
+  { id: 6, en: "What would you like to have next year that you lacked this year?", zh: "明年你希望拥有什么今年缺少的东西？" },
+  { id: 7, en: "What date(s) from this year will remain etched upon your memory, and why?", zh: "今年有哪些日子让你刻骨铭心，为什么？" },
+  { id: 8, en: "What was your biggest achievement of the year?", zh: "今年你最大的成就是什么？" },
+  { id: 9, en: "What was your biggest failure?", zh: "今年你最大的失败是什么？" },
+  { id: 10, en: "What other hardships did you face?", zh: "你还面临了哪些其他困难？" },
+  { id: 11, en: "Did you suffer illness or injury?", zh: "你生病或受伤了吗？" },
+  { id: 12, en: "What was the best thing you bought?", zh: "你买过的最好的东西是什么？" },
+  { id: 13, en: "Whose behavior merited celebration?", zh: "谁的行为值得庆祝？" },
+  { id: 14, en: "Whose behavior made you appalled?", zh: "谁的行为让你感到震惊？" },
+  { id: 15, en: "Where did most of your money go?", zh: "你的大部分钱花在哪里了？" },
+  { id: 16, en: "What did you get really, really, really excited about?", zh: "有什么事让你非常、非常、非常兴奋？" },
+  { id: 17, en: "What song will always remind you of this year?", zh: "哪首歌会让你永远想起今年？" },
+  { id: 18, en: "Compared to this time last year, are you: happier or sadder? Richer or poorer? Healthier or unhealthier?", zh: "与去年这个时候相比，你是：更快乐还是更悲伤？更富有还是更贫穷？更健康还是更不健康？" },
+  { id: 19, en: "What do you wish you’d done more of?", zh: "你希望自己多做些什么？" },
+  { id: 20, en: "What do you wish you’d done less of?", zh: "你希望自己少做些什么？" },
+  { id: 21, en: "How are you spending the holidays?", zh: "你打算怎么过节？" },
+  { id: 22, en: "Did you fall in love this year?", zh: "今年你恋爱了吗？" },
+  { id: 23, en: "Do you hate anyone now that you didn’t hate this time last year?", zh: "你现在讨厌谁是去年这个时候不讨厌的吗？" },
+  { id: 24, en: "What was your favorite show?", zh: "你最喜欢的节目是什么？" },
+  { id: 25, en: "What was the best book you read?", zh: "你读过的最好的书是哪本？" },
+  { id: 26, en: "What was your greatest musical discovery of the year?", zh: "今年你最大的音乐发现是什么？" },
+  { id: 27, en: "What was your favorite film?", zh: "你最喜欢的电影是什么？" },
+  { id: 28, en: "What was your favorite meal?", zh: "你最喜欢的一顿饭是什么？" },
+  { id: 29, en: "What did you want and get?", zh: "你想要并得到了什么？" },
+  { id: 30, en: "What did you want and not get?", zh: "你想要但没得到什么？" },
+  { id: 31, en: "What did you do on your birthday?", zh: "你生日那天做了什么？" },
+  { id: 32, en: "What one thing would have made your year immeasurably more satisfying? ", zh: "有哪一件事会让你的这一年变得无比满足？" },
+  { id: 33, en: "How would you describe your personal fashion this year?", zh: "你如何形容你今年的个人风格？" },
+  { id: 34, en: "What kept you sane?", zh: "是什么让你保持理智？" },
+  { id: 35, en: "Which celebrity/public figure did you admire the most?", zh: "你最崇拜哪位名人/公众人物？" },
+  { id: 36, en: "What political issue stirred you the most?", zh: "哪个政治议题最让你触动？" },
+  { id: 37, en: "Who did you miss?", zh: "你想念谁？" },
+  { id: 38, en: "Who was the best new person you met?", zh: "你认识的最好的新人是谁？" },
+  { id: 39, en: "What valuable life lesson did you learn this year?", zh: "今年你学到了什么宝贵的人生教训？" },
+  { id: 40, en: "What is a quote that sums up your year?", zh: "有哪句名言可以总结你的这一年？" },
+];
