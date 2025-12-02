@@ -1,12 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Serif_SC } from "next/font/google";
 import "./globals.css";
-
-const notoSerifSC = Noto_Serif_SC({
-  variable: "--font-noto-serif-sc",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
 
 export const metadata: Metadata = {
   title: "Yearly 40",
@@ -20,8 +13,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh">
+      <head>
+        <link rel="preconnect" href="https://fonts.loli.net" />
+        <link rel="preconnect" href="https://gstatic.loli.net" crossOrigin="" />
+        <link
+          href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body
-        className={`${notoSerifSC.variable} antialiased font-serif bg-[#fdfbf7] text-gray-900`}
+        className="antialiased font-serif bg-[#fdfbf7] text-gray-900"
+        style={{ fontFamily: "'Noto Serif SC', serif" }}
       >
         {children}
       </body>
