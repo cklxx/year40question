@@ -59,3 +59,23 @@ docker build -t year40question .
 ```bash
 docker run -d -p 80:3000 year40question
 ```
+
+### Accelerating Docker Image Pull
+
+If you experience slow download speeds for the base image, you can configure the Docker registry mirror.
+
+1. Copy the provided `daemon.json` to your Docker configuration:
+```bash
+sudo cp daemon.json /etc/docker/daemon.json
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
+
+Or manually edit `/etc/docker/daemon.json` to add:
+```json
+{
+  "registry-mirrors": [
+    "https://mirror.ccs.tencentyun.com"
+  ]
+}
+```
